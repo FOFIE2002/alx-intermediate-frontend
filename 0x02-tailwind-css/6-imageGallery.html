@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+        <h1 class="text-3xl">Building a Responsive Image Gallery Using CSS Grid
+</h1>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+        <section class="lg:col-span-2 flex">
+            <div class="p-4 bg-red-200 w-1/2">Flexbox Item 1</div>
+            <div class="p-4 bg-red-400 w-1/2">Flexbox Item 2</div>
+        </section>
+        <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+    <section class="mt-4">
+        <h2 class="text-2xl font-semibold mb-4">Image Gallery</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div src="#" class="w-full bg-red-100 min-h-screen">1</div>
+            <div src="#" class="w-full bg-red-200 min-h-screen">2</div>
+            <div src="#" class="w-full bg-red-300 min-h-screen">3</div>
+            <div src="#" class="w-full bg-red-400 min-h-screen">4</div>
+            <div src="#" class="w-full bg-red-500 min-h-screen">5</div>
+            <div src="#" class="w-full bg-red-600 min-h-screen">6</div>
+        </div>
+    </section>
+    
+
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+        <p>&copy; 2025 Fofie Fopa's Blog</p>
+    </footer>
+</body>
+</html>
