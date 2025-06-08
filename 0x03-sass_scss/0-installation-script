@@ -1,0 +1,7 @@
+How to install SASS on my PC
+
+First i enabled my windows powershell to run scripts using the following command "Set-ExecutionPolicy RemoteSigned"
+
+then i installed SASS using the command "npm install -g sass"
+
+I later on proceeded to check the version of sass installed using "sass --version"
